@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Task1</string>
+    <string name="category_text">Комунальне господарство</string>
+    <string name="status_text">В роботi</string>
+    <string name="created_text">Створено</string>
+    <string name="created_date_text">25 лютого 2016</string>
+    <string name="registered_text">Зареєстровано</string>
+    <string name="registered_text_date">26 лютого 2016</string>
+    <string name="deadline_text_date">29 лютого 2016</string>
+    <string name="deadline_text">Вирiшити до</string>
+    <string name="responsible_text">Вiдповiдальний</string>
+    <string name="responsible_text_date">Днiпропетровський МВК()</string>
+    <string name="problem_text">Открытый люк (возле рекламного щита),
+        район поворота 18 и 19 трамваев на проспект Мира с Донецкого шоссе</string>
+</resources>

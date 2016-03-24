@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Task1</string>
+    <string name="category_text">Municipal economy</string>
+    <string name="status_text">In work</string>
+    <string name="created_text">Created</string>
+    <string name="created_date_text">25 february 2016</string>
+    <string name="registered_text">Registered</string>
+    <string name="registered_text_date">26 february 2016</string>
+    <string name="deadline_text">Resolve to</string>
+    <string name="deadline_text_date">29 february 2016</string>
+    <string name="responsible_text">Responsible</string>
+    <string name="responsible_text_date">MVK of Dnipropetrovsk()</string>
+    <string name="problem_text">Opened hatch (near the billboard)
+        turning area of 18 and 19 trams at Prospect Mira from the Donetsk highway</string>
+</resources>
