@@ -21,13 +21,13 @@ import com.amperas17.task1.R;
 import com.amperas17.task1.adapter.DividerItemDecoration;
 import com.amperas17.task1.adapter.ImageAdapter;
 
-import java.util.ArrayList;
+import java.util.ArrayList; //[Commen] Unused imports
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final int ITEM_SPACE = 5;
-    ArrayList<Integer> mImages;
+    ArrayList<Integer> mImages; //[Comment] Visibility modifiers
 
-    RecyclerView mRecyclerView;
+    RecyclerView mRecyclerView; //[Comment] Visibility modifiers
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,18 +48,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mRecyclerView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                //Toast.makeText(MainActivity.this, "RecyclerView", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "RecyclerView", Toast.LENGTH_SHORT).show(); //[Comment] Commented code
                 return false;
             }
         });
-
-        getSupportActionBar().setTitle("CE-1257218");
+        getSupportActionBar().setTitle("CE-1257218"); //[Comment] Hardcode
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#55789E")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#55789E"))); //[Comment] Hardcode
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setStatusBarColor(Color.parseColor("#45688E"));
+            getWindow().setStatusBarColor(Color.parseColor("#45688E")); //[Comment] Hardcode
         }
 
     }
@@ -76,11 +75,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v instanceof TextView){
-            Toast.makeText(this,"TextView",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"TextView",Toast.LENGTH_SHORT).show(); //[Comment] Hardcode
         } else if (v instanceof LinearLayout){
-            Toast.makeText(this,"LinearLayout",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"LinearLayout",Toast.LENGTH_SHORT).show(); //[Comment] Hardcode
         } else if (v instanceof View){
-            Toast.makeText(this,"View",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"View",Toast.LENGTH_SHORT).show(); //[Comment] Hardcode
         }
     }
 
