@@ -12,4 +12,9 @@
     <string name="responsible_text_date">MVK of Dnipropetrovsk()</string>
     <string name="problem_text">Opened hatch (near the billboard)
         turning area of 18 and 19 trams at Prospect Mira from the Donetsk highway</string>
+    <string name="title_string">CE-1257218</string>
+    <string name="text_view_name_string">TextView</string>
+    <string name="linear_layout_name_string">LinearLayout</string>
+    <string name="view_name_string">View</string>
+    <string name="recycler_view_name_string">RecyclerView</string>
 </resources>

@@ -1,6 +1,5 @@
 package com.amperas17.task1.activity;
 
-import android.annotation.TargetApi;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
@@ -13,7 +12,6 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,9 +23,9 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final int ITEM_SPACE = 5;
-    ArrayList<Integer> mImages;
+    private ArrayList<Integer> mImages;
 
-    RecyclerView mRecyclerView;
+    private RecyclerView mRecyclerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,23 +41,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mRecyclerView.setAdapter(new ImageAdapter(this, mImages));
         mRecyclerView.addItemDecoration(new DividerItemDecoration(ITEM_SPACE));
 
-        //It works, but too many times if you scroll recycler, so I leave it to show this way
-        //But I add this onClick function to images in Adapter.
-        mRecyclerView.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                //Toast.makeText(MainActivity.this, "RecyclerView", Toast.LENGTH_SHORT).show();
-                return false;
-            }
-        });
-
-        getSupportActionBar().setTitle("CE-1257218");
+        getSupportActionBar().setTitle(R.string.title_string);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#55789E")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.violet)));
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setStatusBarColor(Color.parseColor("#45688E"));
+            getWindow().setStatusBarColor(getResources().getColor(R.color.blue));
         }
 
     }
@@ -76,11 +64,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v instanceof TextView){
-            Toast.makeText(this,"TextView",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.text_view_name_string,Toast.LENGTH_SHORT).show();
         } else if (v instanceof LinearLayout){
-            Toast.makeText(this,"LinearLayout",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.linear_layout_name_string,Toast.LENGTH_SHORT).show();
         } else if (v instanceof View){
-            Toast.makeText(this,"View",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.view_name_string,Toast.LENGTH_SHORT).show();
         }
     }
 

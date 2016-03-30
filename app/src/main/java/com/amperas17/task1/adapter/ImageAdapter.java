@@ -19,8 +19,8 @@ import static android.support.v7.widget.RecyclerView.*;
  * Works with images in recycler view.
  */
 public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> {
-    public ArrayList<Integer> mImages;
-    public Context mContext;
+    private ArrayList<Integer> mImages;
+    private Context mContext;
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
         ImageView imageView;
@@ -56,7 +56,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
         holder.imageView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext,"RecyclerView",Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, R.string.recycler_view_name_string,Toast.LENGTH_SHORT).show();
             }
         });
     }
