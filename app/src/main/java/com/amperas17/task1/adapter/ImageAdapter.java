@@ -19,7 +19,7 @@ import static android.support.v7.widget.RecyclerView.*;
  * Works with images in recycler view.
  */
 public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> {
-    private ArrayList<Integer> mImages;
+    private ArrayList<Integer> mImages; //[Comment] Use abstraction instead of realization
     private Context mContext;
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
@@ -27,7 +27,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
 
         public ViewHolder(View itemView) {
             super(itemView);
-            this.imageView = (ImageView)itemView.findViewById(R.id.iv_list_item_image);
+            this.imageView = (ImageView)itemView.findViewById(R.id.iv_list_item_image); //[Comment] Unnecessary "this"
         }
     }
 

@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v instanceof TextView){
-            Toast.makeText(this, R.string.text_view_name_string,Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.text_view_name_string,Toast.LENGTH_SHORT).show(); //[Comment] v.getClass().getSimpleName();
         } else if (v instanceof LinearLayout){
             Toast.makeText(this, R.string.linear_layout_name_string,Toast.LENGTH_SHORT).show();
         } else if (v instanceof View){
